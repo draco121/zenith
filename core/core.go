@@ -2,11 +2,11 @@ package core
 
 import (
 	"context"
-	"github.com/draco121/botmanagerservice/repository"
-	"github.com/draco121/common/models"
-	"github.com/draco121/common/utils"
+	"github.com/draco121/horizon/models"
+	"github.com/draco121/horizon/utils"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
+	"zenith/repository"
 )
 
 type IBotService interface {

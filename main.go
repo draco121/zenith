@@ -1,15 +1,15 @@
 package main
 
 import (
-	"github.com/draco121/botmanagerservice/controllers"
-	"github.com/draco121/botmanagerservice/core"
-	"github.com/draco121/botmanagerservice/repository"
-	"github.com/draco121/botmanagerservice/routes"
-	"github.com/draco121/common/database"
-	"github.com/draco121/common/utils"
+	"github.com/draco121/horizon/database"
+	"github.com/draco121/horizon/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"os"
+	"zenith/controllers"
+	"zenith/core"
+	"zenith/repository"
+	"zenith/routes"
 )
 
 func RunApp() {

@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"github.com/draco121/botmanagerservice/core"
-	"github.com/draco121/common/models"
+	"github.com/draco121/horizon/models"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson/primitive"
+	"zenith/core"
 )
 
 type Controllers struct {
