@@ -10,7 +10,7 @@ COPY . .
 RUN go get
 
 # Build the Go application
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o botmanagerservice .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o zenith .
 
 # Stage 2: Run stage
 FROM debian:bookworm
@@ -19,10 +19,10 @@ FROM debian:bookworm
 WORKDIR /app
 
 # Copy only the necessary files from the build stage
-COPY --from=builder /app/botmanagerservice /app/botmanagerservice
+COPY --from=builder /app/zenith /app/zenith
 
 # Expose the port the application runs on
 EXPOSE 80
 
 # Command to run the executable
-CMD ["./botmanagerservice"]
+CMD ["./zenith"]
